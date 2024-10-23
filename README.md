@@ -20,14 +20,14 @@
    4. [ ] Cadastrar Produto
    5. [ ] Index Produto (Listar Produto)
    6. [ ] Editar Produto
-9. Desativar Produto (Funcionalidade Completa)
-10. Cadastrar Usuário [0.5] (Funcionalidade Completa)
-11. Pesquisar Usuário [0.5] (Funcionalidade Completa)
-12. Alterar Usuário [0.5] (Funcionalidade Completa)
-13. Excluir Usuário [0.5] (Funcionalidade Completa)
-14. Efetuar Login/Logout do Usuário [1.0] (Funcionalidade Completa)
-15. Listar Produtos Na página Inicial [0.5]
-16. Listar Produtos com Imagem [2.0]
-17. Adicionar o Modal de Confirmação de exclusão no projeto[1.0]
-18. Criar uma funcionalidade de Lista de produtos favoritos do Usuário [1.5]
-19. Criar o Carrinho de compras [2.0] (Adicionar o Produto selecionado na sessão)
+9. [ ] Desativar Produto (Funcionalidade Completa)
+10. [ ] Cadastrar Usuário [0.5] (Funcionalidade Completa)
+11. [ ] Pesquisar Usuário [0.5] (Funcionalidade Completa)
+12. [ ] Alterar Usuário [0.5] (Funcionalidade Completa)
+13. [ ] Excluir Usuário [0.5] (Funcionalidade Completa)
+14. [ ] Efetuar Login/Logout do Usuário [1.0] (Funcionalidade Completa)
+15. [ ] Listar Produtos Na página Inicial [0.5]
+16. [ ] Listar Produtos com Imagem [2.0]
+17. [ ] Adicionar o Modal de Confirmação de exclusão no projeto[1.0]
+18. [ ] Criar uma funcionalidade de Lista de produtos favoritos do Usuário [1.5]
+19. [ ] Criar o Carrinho de compras [2.0] (Adicionar o Produto selecionado na sessão)
