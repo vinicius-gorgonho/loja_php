@@ -29,3 +29,5 @@
 15. Listar Produtos Na página Inicial [0.5]
 16. Listar Produtos com Imagem [2.0]
 17. Adicionar o Modal de Confirmação de exclusão no projeto[1.0]
+18. Criar uma funcionalidade de Lista de produtos favoritos do Usuário [1.5]
+19. Criar o Carrinho de compras [2.0] (Adicionar o Produto selecionado na sessão)
