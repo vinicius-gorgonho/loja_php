@@ -1,7 +1,7 @@
 <html>
-    <body>
- <a href="controller/ProdutoController.php"> 
-    Testar Controlador 
- </a>
-    </body>
+
+<body>
+   <h1>Bem-Vindo</h1>
+</body>
+
 </html>
