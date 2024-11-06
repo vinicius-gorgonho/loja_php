@@ -35,17 +35,17 @@ if(method_exists('controller\ProdutoController', $method)){
 class ProdutoController{
 
     public function index(){
-
+        
     }
     public function salvar(){
         $nome = filter_input(INPUT_POST, "nome_produto");
         $categoria = filter_input(INPUT_POST, "categoria");
-        $valor = filter_input(INPUT_POST, "valor");
+        $preco = filter_input(INPUT_POST, "preco");
 
         $produto = new Produto();
         $produto->setNome($nome);
         $produto->setCategoria($categoria);
-        $produto->setValor($valor);
+        $produto->setPreco($preco);
 
         $produtoDAO = new ProdutoDAO();
         echo $produtoDAO->salvar($produto);

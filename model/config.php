@@ -2,7 +2,7 @@
 
 $host = "localhost";
 $user = "root";
-$password = "root";
+$password = "sucesso";
 $dbname = "loja";
 $dsn = "mysql:host=$host;dbname=$dbname;";
 $options    = array(
