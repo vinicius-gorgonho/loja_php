@@ -50,5 +50,9 @@ class ProdutoController{
         $produtoDAO = new ProdutoDAO();
         echo $produtoDAO->salvar($produto);
     }
+    public function getTodos(){
+        $produtoDAO = new ProdutoDAO();
+        return $produtoDAO->getTodos();
+    }
 }
 ?>
