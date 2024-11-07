@@ -7,8 +7,8 @@
 4. [x] Criar Classe de Conexão com Banco de dados
 5. [x] Criar a Classe da Camada DAO (ProdutoDAO)
  1. [ ] Salvar Produto
- 2. [ ] Pesquisar Produto
- 3. [ ] Pesquisar Produto ID
+ 2. [x] Pesquisar Produto
+ 3. [x] Pesquisar Produto ID
  4. [ ] Alterar Produto
  5. [ ] Excluir Produto
 6. [x] Criar a Classe de Modelo (Produto)
