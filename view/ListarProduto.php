@@ -26,6 +26,10 @@ use controller\ProdutoController;
     <tr><td> <?= $produto->getNome() ?> </td>
         <td> <?= $produto->getCategoria() ?> </td>
         <td> <?= $produto->getPreco() ?> </td>
+<td><a href="../controller/ProdutoController.php?method=iniciarEditar
+&codigo=<?= $produto->getCodigo() ?>"> 
+  Editar </a> </td>
+<td> <a href="#"> Excluir </a> </td>
     </tr>
     <?php } ?>
     </table>

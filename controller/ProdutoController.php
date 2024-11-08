@@ -54,5 +54,13 @@ class ProdutoController{
         $produtoDAO = new ProdutoDAO();
         return $produtoDAO->getTodos();
     }
+public function iniciarEditar(){
+  $codigo = filter_input(INPUT_GET, "codigo");
+  $produtoDAO = new ProdutoDAO();
+  $produto = $produtoDAO->getPorCodigo($codigo);
+  session_start();
+  $_SESSION['produto'] = $produto;
+  header('location: ../view/EditarProduto.php');
+    }
 }
 ?>

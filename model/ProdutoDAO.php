@@ -42,7 +42,8 @@ class ProdutoDAO{
 $produto = new Produto();
 $produto->setCodigo($linha['codigo']);
 $produto->setNome($linha['nome']);
-
+$produto->setCategoria($linha['categoria']);
+$produto->setPreco($linha['preco']);
 array_push($produtos, $produto);
       }
       return $produtos;
