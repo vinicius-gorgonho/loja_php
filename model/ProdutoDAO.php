@@ -18,7 +18,7 @@ class ProdutoDAO{
    // 5 - Preencher os dados do Usuário
     $nome = $produto->getNome();
     $categoria = $produto->getCategoria();
-    $valor = $produto->getPreco();
+    $preco = $produto->getPreco();
     // 6 Associa os parâmetros
     $stmt->bindParam(':nome', $nome );
     $stmt->bindParam(':categoria', $categoria );
@@ -63,5 +63,30 @@ return $resultado;
    return $error->getMessage();
 }
    }
+public function atualizar($produto){
+   try{
+   $conexao = new Conexao();
+   // 2 -
+   $connection = $conexao->getConnection();
+   // 3 - 
+   $UPDATE = "UPDATE produtos SET nome = :nome, categoria = :categoria, preco = :preco WHERE codigo = :codigo";
+$stmt = $connection->prepare($UPDATE);
+
+$codigo = $produto->getCodigo();
+$nome = $produto->getNome();
+$categoria = $produto->getCategoria();
+$preco = $produto->getPreco();
+
+$stmt->bindParam(':nome', $nome );
+$stmt->bindParam(':categoria', $categoria );
+$stmt->bindParam(':preco', $preco);
+$stmt->bindParam(':codigo', $codigo);
+$stmt->execute();
+return "Produto atualizado com sucesso";
+   }catch(PDOException $error){
+      return $error->getMessage();
+   }
+}
+
 }
 ?>

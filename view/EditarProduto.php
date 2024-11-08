@@ -10,13 +10,15 @@
  <h1>Editar Produto</h1>
  <form action="../controller/ProdutoController.php"
   method="POST">
-<input type="hidden" name="method" value="salvar" />
+<input type="hidden" name="method" value="atualizar" />
 <input type="text" name="nome_produto" 
 value="<?= $produto['nome'] ?>" />
 <input type="text" name="categoria" 
- value="<?= $produto['categoria'] ?> />
+ value="<?= $produto['categoria'] ?>" />
 <input type="text" name="preco"  
-value="<?= $produto['preco'] ?> />
+value="<?= $produto['preco'] ?>"/>
+<input type="hidden" name="codigo" 
+value="<?= $produto['codigo'] ?>" />
 <input type="submit" value="Enviar" />
  </form>
     </body>

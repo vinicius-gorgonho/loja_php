@@ -62,5 +62,23 @@ public function iniciarEditar(){
   $_SESSION['produto'] = $produto;
   header('location: ../view/EditarProduto.php');
     }
+    public function atualizar(){
+$codigo = filter_input(INPUT_POST, "codigo");
+$nome = filter_input(INPUT_POST, "nome_produto");
+$categoria = filter_input(INPUT_POST, "categoria");
+$preco = filter_input(INPUT_POST, "preco");
+
+    $produto = new Produto();
+    $produto->setCodigo($codigo);
+    $produto->setNome($nome);
+    $produto->setCategoria($categoria);
+    $produto->setPreco($preco);
+
+    $produtoDAO = new ProdutoDAO();
+    $msg = $produtoDAO->atualizar($produto);
+    session_start();
+    $_SESSION['msg'] = $msg;
+    header('location: ../view/ListarProduto.php');
+    }
 }
 ?>
