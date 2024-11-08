@@ -3,23 +3,23 @@
 > Atividades
 1. [x] Criar o banco de dados da Loja
 2. [x] Criar a estrutura de pastas do projeto
-3. [ ] Adicionar o framework de CSS
+3. [x] Adicionar o framework de CSS
 4. [x] Criar Classe de Conexão com Banco de dados
 5. [x] Criar a Classe da Camada DAO (ProdutoDAO)
- 1. [ ] Salvar Produto
+ 1. [x] Salvar Produto
  2. [x] Pesquisar Produto
  3. [x] Pesquisar Produto ID
- 4. [ ] Alterar Produto
+ 4. [x] Alterar Produto
  5. [ ] Excluir Produto
 6. [x] Criar a Classe de Modelo (Produto)
 7. [ ] Criar o HomeController (Carregar a Index)
-8. [ ] Criar o ProdutoController (Controla as operações de Produto)
+8. [x] Criar o ProdutoController (Controla as operações de Produto)
    1. [ ] Criar a Index (View)
    2. [ ] Cria o Menu (Layout)
-   3. [ ] Criar Views de Produto
-   4. [ ] Cadastrar Produto
-   5. [ ] Index Produto (Listar Produto)
-   6. [ ] Editar Produto
+   3. [x] Criar Views de Produto
+   4. [x] Cadastrar Produto
+   5. [x] Index Produto (Listar Produto)
+   6. [x] Editar Produto
 9. [ ] Desativar Produto (Funcionalidade Completa)
 10. [ ] Cadastrar Usuário [0.5] (Funcionalidade Completa)
 11. [ ] Pesquisar Usuário [0.5] (Funcionalidade Completa)
