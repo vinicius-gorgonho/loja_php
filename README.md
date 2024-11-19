@@ -10,17 +10,17 @@
  2. [x] Pesquisar Produto
  3. [x] Pesquisar Produto ID
  4. [x] Alterar Produto
- 5. [ ] Excluir Produto
+ 5. [x] Excluir Produto
 6. [x] Criar a Classe de Modelo (Produto)
 7. [ ] Criar o HomeController (Carregar a Index)
 8. [x] Criar o ProdutoController (Controla as operações de Produto)
-   1. [ ] Criar a Index (View)
-   2. [ ] Cria o Menu (Layout)
+   1. [x] Criar a Index (View)
+   2. [x] Cria o Menu (Layout)
    3. [x] Criar Views de Produto
    4. [x] Cadastrar Produto
    5. [x] Index Produto (Listar Produto)
    6. [x] Editar Produto
-9. [ ] Desativar Produto (Funcionalidade Completa)
+9. [x] Desativar Produto (Funcionalidade Completa)
 10. [ ] Cadastrar Usuário [0.5] (Funcionalidade Completa)
 11. [ ] Pesquisar Usuário [0.5] (Funcionalidade Completa)
 12. [ ] Alterar Usuário [0.5] (Funcionalidade Completa)
