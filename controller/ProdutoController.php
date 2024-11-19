@@ -48,9 +48,12 @@ class ProdutoController{
         $produto->setPreco($preco);
 
         $produtoDAO = new ProdutoDAO();
-        echo $produtoDAO->salvar($produto);
+        $msg = $produtoDAO->salvar($produto);
+        $_SESSION['msg'] = $msg;
+        header('location: ../view/ListarProduto.php');
     }
     public function getTodos(){
+        unset($_SESSION['msg']);
         $produtoDAO = new ProdutoDAO();
         return $produtoDAO->getTodos();
     }
@@ -79,6 +82,18 @@ $preco = filter_input(INPUT_POST, "preco");
     session_start();
     $_SESSION['msg'] = $msg;
     header('location: ../view/ListarProduto.php');
+    }
+
+    public function excluir(){     
+        session_start();    
+        $codigo = filter_input(INPUT_GET, "codigo");
+        $produtoDAO = new ProdutoDAO();
+
+        $produto = new Produto();
+        $produto->setCodigo($codigo);
+        $msg = $produtoDAO->excluir($produto);
+        $_SESSION['msg'] = $msg;
+        header('location: ../view/ListarProduto.php');
     }
 }
 ?>

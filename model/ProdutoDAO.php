@@ -88,5 +88,28 @@ return "Produto atualizado com sucesso";
    }
 }
 
+public function excluir($produto){
+   try{
+   // 1 -  Cria o objeto de Conexão
+   $conexao = new Conexao();
+  // 2 -  Recuperar um conexão com o banco
+  $conn = $conexao->getConnection();
+  // 3 - Montar o SQL
+  $DELETE = "DELETE FROM produtos
+             WHERE codigo = :codigo";
+  // 4- Cria a Consulta (statement)
+  $stmt = $conn->prepare( $DELETE );
+ // 5 - Preencher os dados do Usuário
+  $codigo = $produto->getCodigo();
+  // 6 Associa os parâmetros
+  $stmt->bindParam(':codigo', $codigo);
+  // 7 - REaliza Consulta
+  $stmt->execute();
+  return "Produto excluído com sucesso";
+ }catch(PDOException $error){
+   return $error->getMessage();
+ }
+}
+
 }
 ?>
